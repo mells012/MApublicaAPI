@@ -11,7 +11,7 @@ using MApublicaAPI.Services;
 
 namespace MApublicaAPI.ViewModels
 {
-    public class ApodViewModel : INotifyPropertyChanged
+    public class MAapodViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
@@ -21,7 +21,7 @@ namespace MApublicaAPI.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-        public ApodViewModel()
+        public MAapodViewModel()
         {
             ChosenDate = DateTime.Now;
         }
